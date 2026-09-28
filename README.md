@@ -33,7 +33,7 @@ GitHub permite. Hay que descargarlo aparte:
 2. Iniciar sesión y darle click a "Download"
 3. Descomprimir el archivo si llega como .zip
 4. Copiar el archivo `creditcard.csv` dentro de la carpeta `data/` de este
-   repositorio
+   repositorio (al clonar primeramente el proyecto)
 
 Al final debe quedar así: `data/creditcard.csv`
 
