@@ -14,6 +14,7 @@ Para esto estamos utilizando el conjunto de datos Credit Card Fraud Detection, d
 Las dos clases que se manejan son:
 
 0: transacción normal.
+
 1: transacción fraudulenta.
 
 Uno de los principales problemas que encontramos desde el comienzo es que las transacciones fraudulentas son una cantidad muy pequeña en comparación con las transacciones normales. Esto genera un desbalance de clases que debemos tener en cuenta al momento de entrenar y evaluar los modelos.
@@ -27,6 +28,7 @@ Para el proyecto utilizamos el dataset Credit Card Fraud Detection, disponible e
 El conjunto de datos contiene información relacionada con transacciones realizadas con tarjetas de crédito. Está compuesto por 31 columnas, de las cuales:
 
 30 corresponden a variables que pueden ser utilizadas para hacer la predicción.
+
 1 corresponde a la variable objetivo Class.
 
 Entre las variables encontramos:
@@ -38,8 +40,9 @@ Class: indica si la transacción es normal o fraudulenta.
 
 El archivo utilizado para realizar el análisis es:
 
+```
 creditcard.csv
-
+```
 Por el tamaño del archivo, decidimos no incluirlo directamente dentro del repositorio de GitHub.
 
 ## Contenido del repositorio
