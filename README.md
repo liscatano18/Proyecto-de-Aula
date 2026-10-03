@@ -3,7 +3,7 @@
 Proyecto de aula – Modelos y Simulación de Sistemas II
 Universidad de Antioquia
 
-Integrantes: [Kelly Julieth Arango Henao], [Nombre 2], [Nombre 3]
+Integrantes: Kelly Julieth Arango Henao, [Nombre 2], [Nombre 3]
 
 ## De qué trata el proyecto
 
