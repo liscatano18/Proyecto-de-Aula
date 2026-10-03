@@ -3,7 +3,7 @@
 Proyecto de aula – Modelos y Simulación de Sistemas II
 Universidad de Antioquia
 
-Integrantes: [Nombre 1], [Nombre 2], [Nombre 3]
+Integrantes: [Kelly Julieth Arango Henao], [Nombre 2], [Nombre 3]
 
 ## De qué trata el proyecto
 
@@ -49,7 +49,8 @@ reporte/ -> informe de la Entrega 1 en PDF
 notebooks/ -> notebooks utilizados durante el desarrollo
 data/ -> archivo creditcard.csv
 resultados/ -> gráficas y resultados obtenidos
-requirements.txt -> librerías necesarias para ejecutar el proyecto README.md -> información e instrucciones del proyecto
+requirements.txt -> librerías necesarias para ejecutar el proyecto
+README.md -> información e instrucciones del proyecto
 ```
 
 ### 1. Fuente de los datos y descargar el dataset
