@@ -13,9 +13,10 @@ solo el 0,17 % de las transacciones son fraude.
 ## Qué hay en el repositorio
 
 - `reporte/`: el informe del proyecto (Entregable I y II) en PDF
-- `notebooks/`: el código con el análisis, los modelos y la reducción de dimensión
+- `notebooks/`: el código con el análisis, los modelos y la reducción de
+  dimensión; las gráficas y tablas generadas se pueden ver directamente en
+  las salidas de cada notebook
 - `data/`: aquí va el archivo de datos (ver abajo)
-- `resultados/`: gráficas y tablas que generan los notebooks
 
 ## Cómo correrlo
 
