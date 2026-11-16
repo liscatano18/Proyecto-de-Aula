@@ -13,9 +13,7 @@ solo el 0,17 % de las transacciones son fraude.
 ## Qué hay en el repositorio
 
 - `reporte/`: el informe del proyecto (Entregable I y II) en PDF
-- `notebooks/`: el código con el análisis, los modelos y la reducción de
-  dimensión; las gráficas y tablas generadas se pueden ver directamente en
-  las salidas de cada notebook
+- `notebooks/`: el código con el análisis, los modelos y la reducción de dimensión
 - `data/`: aquí va el archivo de datos (ver abajo)
 
 ## Cómo correrlo
@@ -29,14 +27,25 @@ solo el 0,17 % de las transacciones son fraude.
    - `02_Modelos.ipynb`: preparación de los datos y entrenamiento de los cinco
      modelos (regresión logística, KNN, Random Forest, red neuronal y SVM)
    - `03_Reduccion_Dimension.ipynb`: análisis de variables y reducción de
-     dimensión con PCA y UMAP
+     dimensión con PCA y UMAP, comparando los dos mejores modelos (Random
+     Forest y regresión logística) con las variables originales, con PCA y
+     con UMAP
 
 ## Resultados principales
 
 Random Forest fue el mejor modelo en validación y en prueba (AUPRC de 0,80 y
-0,78 respectivamente). Los demás modelos (regresión logística, SVM, red
-neuronal) quedaron con un desempeño similar entre sí, con intervalos de
-confianza solapados. Más detalle en el reporte.
+0,78 respectivamente), seguido de cerca por la regresión logística, la SVM y
+la red neuronal, con un desempeño similar entre sí.
+
+Al reducir la dimensión, PCA mantuvo un desempeño muy cercano al de las
+variables originales usando solo 23 de las 30 variables (23,3 % de
+reducción). UMAP, en cambio, con solo 2 componentes (93,3 % de reducción),
+perdió bastante desempeño, por lo que resultó más útil para visualización
+que para mantener la capacidad de detección de fraude.
+
+Más detalle en el reporte.
+
+
 
 ## Video de sustentación
 
