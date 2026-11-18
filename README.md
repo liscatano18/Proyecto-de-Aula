@@ -1,6 +1,6 @@
 # Detección de fraude con tarjetas de crédito
 
-Proyecto de aula de la asignatura Modelos y Simulación de Sistemas II de la Universidad de Antioquia.
+Proyecto aula de la asignatura Modelos y Simulación de Sistemas II de la Universidad de Antioquia.
 
 **Integrantes:** Kelly Julieth Arango Henao, Lisbeth Cataño Sepulveda
 
