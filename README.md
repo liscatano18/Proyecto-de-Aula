@@ -14,17 +14,22 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 
 ## Estructura del repositorio
 
+```text
 ├── data/
 │   └── creditcard.csv
+│
 ├── notebooks/
 │   ├── 01_EDA.ipynb
 │   ├── 02_Modelos.ipynb
 │   └── 03_Reduccion_Dimension.ipynb
+│
 ├── informe/
 │   ├── Entregable_I.pdf
 │   └── Entregable_II.pdf
+│
 ├── requirements.txt
 └── README.md
+```
 
 
 - `data/:` contiene el conjunto de datos utilizado.
