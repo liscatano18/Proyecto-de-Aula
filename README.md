@@ -36,30 +36,14 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 - `requirements.txt:` incluye las dependencias necesarias para ejecutar el proyecto.
 
 ## Requisitos e instalación
-
-1. Descargar el dataset de Kaggle (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
-   y guardar `creditcard.csv` en la carpeta `data/`. El archivo no está incluido
-   en este repositorio porque pesa más de lo que GitHub permite.
-2. Instalar las librerías: `pip install -r requirements.txt`
-3. Abrir los notebooks en orden:
-   - `01_EDA.ipynb`: análisis exploratorio de los datos
-   - `02_Modelos.ipynb`: preparación de los datos y entrenamiento de los cinco
-     modelos (regresión logística, KNN, Random Forest, red neuronal y SVM)
-   - `03_Reduccion_Dimension.ipynb`: análisis de variables y reducción de
-     dimensión con PCA y UMAP, comparando los dos mejores modelos (Random
-     Forest y regresión logística) con las variables originales, con PCA y
-     con UMAP
-     
+    
 1. Clonar el repositorio:
-
- 
 
 2. Descargar el dataset desde Kaggle - Credit Card Fraud Detection (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
 3. Guardar el archivo creditcard.csv dentro de la carpeta data/.
 
   **Nota:** el dataset no se incluye en el repositorio debido a su tamaño.
-
 
 4. Instalar las dependencias:
 
@@ -68,10 +52,10 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 5. Abrir y ejecutar los notebooks en el siguiente orden:
 
 | Notebook | Descripción |
-   |---|---|
-   | `01_EDA.ipynb` | Análisis exploratorio y comprensión del conjunto de datos. |
-   | `02_Modelos.ipynb` | Preparación de los datos y entrenamiento de cinco modelos: Regresión Logística, KNN, Random Forest, Red Neuronal y SVM. |
-   | `03_Reduccion_Dimension.ipynb` | Análisis de variables y aplicación de PCA y UMAP, comparando Random Forest y Regresión Logística con diferentes representaciones de los datos. |
+|---|---|
+| `01_EDA.ipynb` | Análisis exploratorio y comprensión del conjunto de datos. |
+| `02_Modelos.ipynb` | Preparación de los datos y entrenamiento de cinco modelos: Regresión Logística, KNN, Random Forest, Red Neuronal y SVM. |
+| `03_Reduccion_Dimension.ipynb` | Análisis de variables y aplicación de PCA y UMAP, comparando Random Forest y Regresión Logística con diferentes representaciones de los datos. |
 
 ## Resultados principales
 
