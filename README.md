@@ -37,25 +37,23 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 
 ## Requisitos e instalación
     
-1. Clonar el repositorio:
+1. Clonar el repositorio.
 
 2. Descargar el dataset desde Kaggle - Credit Card Fraud Detection (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 
-3. Guardar el archivo creditcard.csv dentro de la carpeta data/.
-
-  **Nota:** el dataset no se incluye en el repositorio debido a su tamaño.
+3. Guardar el archivo creditcard.csv dentro de la carpeta data/.  **Nota:** el dataset no se incluye en el repositorio debido a su tamaño.
 
 4. Instalar las dependencias:
 
-`pip install -r requirements.txt`
+        `pip install -r requirements.txt`
 
 5. Abrir y ejecutar los notebooks en el siguiente orden:
 
-| Notebook | Descripción |
-|---|---|
-| `01_EDA.ipynb` | Análisis exploratorio y comprensión del conjunto de datos. |
-| `02_Modelos.ipynb` | Preparación de los datos y entrenamiento de cinco modelos: Regresión Logística, KNN, Random Forest, Red Neuronal y SVM. |
-| `03_Reduccion_Dimension.ipynb` | Análisis de variables y aplicación de PCA y UMAP, comparando Random Forest y Regresión Logística con diferentes representaciones de los datos. |
+   | Notebook | Descripción |
+   |---|---|
+   | `01_EDA.ipynb` | Análisis exploratorio y comprensión del conjunto de datos. |
+   | `02_Modelos.ipynb` | Preparación de los datos y entrenamiento de cinco modelos: Regresión Logística, KNN, Random Forest, Red Neuronal y SVM. |
+   | `03_Reduccion_Dimension.ipynb` | Análisis de variables y aplicación de PCA y UMAP, comparando Random Forest y Regresión Logística con diferentes representaciones de los datos. |
 
 ## Resultados principales
 
