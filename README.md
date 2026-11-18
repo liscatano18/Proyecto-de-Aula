@@ -1,22 +1,41 @@
 # Detección de fraude con tarjetas de crédito
 
-Proyecto de aula de Modelos y Simulación de Sistemas II, Universidad de Antioquia.
+Proyecto de aula de la asignatura Modelos y Simulación de Sistemas II de la Universidad de Antioquia.
 
-Integrantes: Kelly Julieth Arango Henao, Lisbeth Cataño Sepulveda
+**Integrantes:** Kelly Julieth Arango Henao, Lisbeth Cataño Sepulveda
 
-## De qué trata
+## Descripción del proyecto
 
-Queremos predecir si una transacción con tarjeta es fraude o no, usando el
-dataset de Kaggle "Credit Card Fraud Detection". Es un problema difícil porque
-solo el 0,17 % de las transacciones son fraude.
+Este proyecto busca identificar transacciones fraudulentas con tarjetas de crédito mediante técnicas de aprendizaje automático (Machine Learning).
 
-## Qué hay en el repositorio
+Para ello, se utiliza el conjunto de datos Credit Card Fraud Detection, disponible en Kaggle. Uno de los principales retos es el desbalance de clases, ya que aproximadamente el 0,17 % de las transacciones corresponden a fraudes.
 
-- `reporte/`: el informe del proyecto (Entregable I y II) en PDF
-- `notebooks/`: el código con el análisis, los modelos y la reducción de dimensión
-- `data/`: aquí va el archivo de datos (ver abajo)
+Se realiza un análisis exploratorio de los datos, se entrenan y comparan diferentes modelos de clasificación y, finalmente, se evalúan técnicas de reducción de dimensionalidad.
 
-## Cómo correrlo
+## Estructura del repositorio
+
+├── data/
+│   └── creditcard.csv
+├── notebooks/
+│   ├── 01_EDA.ipynb
+│   ├── 02_Modelos.ipynb
+│   └── 03_Reduccion_Dimension.ipynb
+├── informe/
+│   ├── Entregable_I.pdf
+│   └── Entregable_II.pdf
+├── requirements.txt
+└── README.md
+
+
+- `data/:` contiene el conjunto de datos utilizado.
+
+- `notebooks/:` incluye los notebooks del análisis exploratorio, entrenamiento de modelos y reducción de dimensionalidad.
+
+- `informe/:` contiene los informes correspondientes a los entregables del proyecto.
+
+- `requirements.txt:` incluye las dependencias necesarias para ejecutar el proyecto.
+
+## Requisitos e instalación
 
 1. Descargar el dataset de Kaggle (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
    y guardar `creditcard.csv` en la carpeta `data/`. El archivo no está incluido
@@ -30,21 +49,43 @@ solo el 0,17 % de las transacciones son fraude.
      dimensión con PCA y UMAP, comparando los dos mejores modelos (Random
      Forest y regresión logística) con las variables originales, con PCA y
      con UMAP
+     
+1. Clonar el repositorio:
+
+ 
+
+2. Descargar el dataset desde Kaggle - Credit Card Fraud Detection (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+3. Guardar el archivo creditcard.csv dentro de la carpeta data/.
+
+  **Nota:** el dataset no se incluye en el repositorio debido a su tamaño.
+
+
+4. Instalar las dependencias:
+
+`pip install -r requirements.txt`
+
+5. Abrir y ejecutar los notebooks en el siguiente orden:
+
+| Notebook | Descripción |
+   |---|---|
+   | `01_EDA.ipynb` | Análisis exploratorio y comprensión del conjunto de datos. |
+   | `02_Modelos.ipynb` | Preparación de los datos y entrenamiento de cinco modelos: Regresión Logística, KNN, Random Forest, Red Neuronal y SVM. |
+   | `03_Reduccion_Dimension.ipynb` | Análisis de variables y aplicación de PCA y UMAP, comparando Random Forest y Regresión Logística con diferentes representaciones de los datos. |
 
 ## Resultados principales
 
-Random Forest fue el mejor modelo en validación y en prueba (AUPRC de 0,80 y
-0,78 respectivamente), seguido de cerca por la regresión logística, la SVM y
-la red neuronal, con un desempeño similar entre sí.
+- **Comparación de modelos:** Random Forest obtuvo el mejor resultado, con un AUPRC de 0,8034 en validación y 0,7833 en prueba.
 
-Al reducir la dimensión, PCA mantuvo un desempeño muy cercano al de las
-variables originales usando solo 23 de las 30 variables (23,3 % de
-reducción). UMAP, en cambio, con solo 2 componentes (93,3 % de reducción),
-perdió bastante desempeño, por lo que resultó más útil para visualización
-que para mantener la capacidad de detección de fraude.
+- **Reducción con PCA:** Permitió trabajar con 23 componentes en lugar de 30, reduciendo la dimensionalidad en un 23,3 % y conservando un desempeño cercano al de las variables originales.
 
-Más detalle en el reporte.
+- **Reducción con UMAP:** consiguió una mayor reducción de dimensionalidad, pero también presentó una disminución importante en el desempeño predictivo.
 
+En general, los resultados muestran que Random Forest fue el modelo con mejor desempeño y que PCA ofreció un mejor equilibrio entre la reducción de variables y la capacidad de detección de fraude.
+
+## Documentación
+
+Para conocer con mayor detalle el desarrollo, la metodología, las pruebas realizadas y los resultados obtenidos, se pueden consultar los informes disponibles en la carpeta informe/.
 
 
 ## Video de sustentación
