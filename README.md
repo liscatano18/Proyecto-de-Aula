@@ -23,9 +23,6 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 │   ├── 02_Modelos.ipynb
 │   └── 03_Reduccion_Dimension.ipynb
 │
-├── informe/
-│   ├── Entregable_I.pdf
-│   └── Entregable_II.pdf
 │
 ├── requirements.txt
 └── README.md
@@ -70,11 +67,4 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 
 En general, los resultados muestran que Random Forest fue el modelo con mejor desempeño y que PCA ofreció un mejor equilibrio entre la reducción de variables y la capacidad de detección de fraude.
 
-## Documentación
 
-Para conocer con mayor detalle el desarrollo, la metodología, las pruebas realizadas y los resultados obtenidos, se pueden consultar los informes disponibles en la carpeta informe/.
-
-
-## Video de sustentación
-
-...
