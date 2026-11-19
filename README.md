@@ -33,8 +33,6 @@ Se realiza un análisis exploratorio de los datos, se entrenan y comparan difere
 
 - `notebooks/:` incluye los notebooks del análisis exploratorio, entrenamiento de modelos y reducción de dimensionalidad.
 
-- `informe/:` contiene los informes correspondientes a los entregables del proyecto.
-
 - `requirements.txt:` incluye las dependencias necesarias para ejecutar el proyecto.
 
 ## Requisitos e instalación
